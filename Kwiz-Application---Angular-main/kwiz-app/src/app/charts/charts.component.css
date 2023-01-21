@@ -1,0 +1,25 @@
+body{
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+.t-meet{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .custombtn:hover{
+    background-color: #F3994B;
+    border: white;
+  }
+  
+  .t-image{
+    width: 100%;
+    padding-left: 10%;
+  
+  }
+
+  
+
+  

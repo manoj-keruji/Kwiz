@@ -1,0 +1,26 @@
+<div id="resultdiv">
+
+    <div *ngIf="isPassed(); else failed">
+        <img id="resimg" src="../../assets/result_img_pass.jpg" style="padding-bottom: 3%;"/>
+        <div id="score" style="padding-bottom: 1%; color: green;">
+            {{score}}/10
+        </div>
+        <br/>
+        Congratulations {{username}}!!!<br/>
+        <br/>
+        You have successfully passed the test. <br/>
+    </div>
+
+    
+    <ng-template #failed>
+        <img id="resimg" src="../../assets/result_img_fail.jpeg" style="padding-bottom: 3%;" />
+        <div id="score" style="padding-bottom: 1%; color: red;">
+            {{score}}/10
+        </div>
+        Sorry {{username}}!!!<br/>
+        You didn't meet the passing criteria.<br/>
+    </ng-template>
+    <div style="padding-top: 15px;padding-bottom: 25px;">
+        <a routerLink="/home" id="dashboardlink" style="font-size:x-large;"><mat-icon>replay</mat-icon>&nbsp;Back To Home</a>
+    </div>
+</div>

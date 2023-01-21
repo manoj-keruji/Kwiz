@@ -1,0 +1,28 @@
+<div class="container" style="font-family: montserrat;" >
+    <div class="jumbotron jumbo">
+        <div><h1 style="font-weight: 800;">Hii {{username}},</h1></div>
+        <div><h2>Quiz Category: {{entry.quiz.category}}</h2></div>
+        <div><h2>Quiz Name: {{entry.quiz.name}}</h2></div>
+        <div style=" font-weight: 600; font-size: 25px;">Quiz Level: {{LEVEL[entry.quiz ? entry.quiz.level : 0]}}</div>
+        <div style=" font-weight: 600; font-size: 15px;"> Attempted on : {{entry.user.date?.toMillis() | date:'dd/MM/yyyy h:mm:ss a'}}</div>
+        <div style="text-align: center; "><h2 style="font-weight: 800;">Your Score</h2></div>
+        <div style="text-align: center;"><h1 style="font-weight: 900;">{{entry.user.score}}/10</h1></div>
+    </div>
+    {{setZero()}}
+    <div *ngFor="let question of entry.quiz.questions; let indexOfElement=index" class="container containerShadow" >
+        <div class="Qno">Question no: {{Incre()}}</div>
+        <div class="Qtext">{{question.text}}</div>
+        <div *ngIf="entry.user.answers[indexOfElement]==-1" class="alert alert-warning border border-warning" style="font-weight: 900;color: black;"> NOT Attempted !!!</div>
+        <div *ngFor="let option of question.options; let number = index"> 
+           
+            <div *ngIf="question.answerIndex==number" class="alert alert-success border border-success"><span>{{question.options[number]}} </span> <span style="float: right;">Correct Answer  <img src="../../assets/check2-circle.svg" alt=""></span></div>
+            <div *ngIf="!(question.answerIndex==number) && number==entry.user.answers[indexOfElement]" class="alert alert-danger border border-danger"> <span>{{question.options[number]}} </span> <span style="float: right;">Your Answer <img src="../../assets/clipboard-x.svg" alt=""></span></div>
+            <div *ngIf="!(question.answerIndex==number) && !(number==entry.user.answers[indexOfElement])"  class="alert alert-seconday"><span>{{question.options[number]}} </span> </div>
+
+        </div>
+      
+    </div>
+   {{setZero()}}
+
+    <div style="text-align: center;"><button (click)="back()"class="btn " style="margin: 40px; font-size: 30px; background-color: #ff9334da;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);"> Back to Profile</button></div>
+</div>

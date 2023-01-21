@@ -1,0 +1,23 @@
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="charts.component.css">
+
+ <h2 style="padding-left: 10%">Performance Analysis Score vs Time</h2>
+<body>
+    <div class="row" style="margin: 100px;padding-left: 10%;">
+        <div class="chart-wrapper" style="width: 80%;">
+            <canvas baseChart 
+                [datasets]="lineChartData" 
+                [labels]="lineChartLabels" 
+                [options]="lineChartOptions"
+                [colors]="lineChartColors" 
+                [legend]="lineChartLegend" 
+                [chartType]="lineChartType"
+                [plugins]="lineChartPlugins">
+            </canvas>
+        </div>
+      </div>
+      <div style="text-align: center;"><button (click)="back()"class="btn " style="margin: 40px; font-size: 30px; background-color: #ff9334da;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);"> Back to Profile</button></div>
+
+</body>

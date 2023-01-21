@@ -1,0 +1,74 @@
+
+ @media screen and (max-width:1199px) {
+    .navdiv {
+        height: auto;  align-content: center;  width: 100%;  background: #f2984a38;
+    }
+    .navbar-nav{
+        display: flex;
+     }
+    .navbar-nav span{
+         margin: 15px;
+     }
+    .navbar-nav span a{
+        width: 25%;
+        float: none;
+        margin: 20px;
+         padding-left: 10px;
+        padding-top: 10px;
+          display: inline;
+         color:black;
+         text-align: center;
+         font-size: 25px;
+         font-weight: 1000;  
+         /* position: relative;  */
+    
+     }
+     
+  }
+ 
+  @media screen and (min-width:1200px) {
+    .navdiv {
+        height: 100px;  align-content: center;  width: 100%;  background: #f2984a38;
+    }
+    .navbar-nav {
+        display: inline-block;
+     }
+     .navbar-nav span a{
+        
+         padding-left: 10px;
+        padding-top: 10px;
+         display: inline-block;
+         color:black;
+        
+         text-align: center;
+         font-size: 25px;
+         font-weight: 1000; 
+         
+    
+     }
+  }
+
+
+.navbar-nav{
+    width: 100%;
+    padding: 50px;
+   padding-top: 1%;
+  text-align: center;
+  font-family: Montserrat;
+}
+
+.navbar-nav a:hover { 
+         color: white ;
+         background-color: #ecab72;
+         border-radius: 4px;
+         text-decoration: none;
+    }
+
+.myactive{
+    border-bottom: 8px solid orange;
+     font-weight: 1100;   
+      font-size: 30px;
+     border-radius: 5px;
+     text-decoration: none;
+    
+}

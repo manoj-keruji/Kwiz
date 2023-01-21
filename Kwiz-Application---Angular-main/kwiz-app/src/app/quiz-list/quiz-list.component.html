@@ -1,0 +1,16 @@
+    <div style="justify-content: center; display: flex; padding-top: 1%; min-height: 70%;" >
+        <div class="row" >
+            <div *ngFor="let doc of docList">
+                <div class="card col-sm-12" >
+                    <div class="card-body" >
+                        <h4 class="card-title">{{subject}} </h4>
+                        <h4 class="card-title2">{{doc.data().name}}</h4>
+                           <p class="card-text">Number of Questions: {{doc.data().questions.length}}</p>
+                           <p class="card-text">Level: {{level[doc.data().level]}}</p>
+                        <button  (click)="btnClick(doc)"  class="btn btn-light">START QUIZ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,82 @@
+<div class="row">
+    <div class="column">
+        <div id="welcometxt">
+            <h2>Welcome to kWiz!</h2>
+            <p style="color:rgb(126, 121, 121);"> 
+                A platform where you can attempt
+                quizzes according to your favorite category.
+            </p>
+        </div>
+        <img id="welcome_img" src="../../../assets/login_img.svg"/>
+    </div>
+
+    <div class="column">
+        <div id="formbox" >
+            <p class = "center_para" style="font-size: xx-large; padding-top: 3%;">
+                LOGIN <br/>
+            </p> 
+            <p class = "center_para" style="color:rgb(126, 121, 121);">
+                Please use your registered email to login<br/><br/><br/>
+            </p>
+            <form #loginForm="ngForm">
+                <label for="email">Email ID*</label><br/>
+                <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email id"
+                    [(ngModel)]="email"
+                    #email_id="ngModel"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                />
+                <br /><br />
+
+                <!-- Error Handling-->
+                <div
+                    *ngIf="email_id.invalid && (email_id.dirty || email_id.touched)"
+                    class="alert alert-danger"
+                >
+                    <div *ngIf="email_id.errors?.required">Email Id is required.</div>
+                    <div *ngIf="email_id.errors?.pattern">
+                    Please provide a valid email id.
+                    </div>
+                </div>
+
+                <label for="password">Password*</label><br />
+                <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    [(ngModel)]="password"
+                    ngModel
+                    #f_password="ngModel"
+                    minlength="6"
+                    required
+                />
+                <br /><br />
+
+                <div
+                    *ngIf="f_password.invalid && (f_password.dirty || f_password.touched)"
+                    class="alert alert-danger"
+                >
+                    <div *ngIf="f_password.errors?.required">Password required.</div>
+                    <div *ngIf="f_password.errors?.minlength">
+                    Password should be at least 6 characters
+                    </div>
+                </div>
+                <br/><br/>
+                <button id="login_button" [disabled]="!loginForm.valid" (click)="login()">Login</button>
+                <br/>
+            </form>
+            <br/><br/><br/>
+            <p class = "end_para">
+                New User?<br/>
+                <a routerLink="/register" style="font-weight: lighter;">SIGNUP here</a>            </p>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,99 @@
+.profile-head {
+  transform: translateY(5rem);
+  
+}
+
+.cover {
+  /*background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80); */
+  background-size: cover;
+  min-height: 175px;
+  background-repeat: no-repeat;
+  background-color: #F3994B;
+}
+
+body {
+  background: #f7f3e9;
+  background: linear-gradient(to right, #e96443, #904e95);
+  min-height: 100vh;
+}
+
+#b1:hover{
+  background-color: #F3994B;
+  border: white;
+}
+.card-body{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+#cards{
+ 
+  background: #ffe5b9a2;
+  font-family: Montserrat;
+  width: 350px;
+  border-radius: 20px;
+  margin: 15px;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+  border: solid 1px orange;
+}
+.cardheader{
+color: darkred;
+font-weight: bolder;
+text-align: center;
+font-size: xx-large;
+padding-top: 10px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+.card-text{
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card-title{
+  text-align: center;
+  font-size: x-large;
+  font-weight:bold;
+  color: darkred;
+  padding-bottom: 18px;
+  margin-bottom: 0px;
+}
+
+
+.level{
+  font-size: x-large;
+  color: black;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+.status{
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.attempted{
+  color: black;
+  font-weight: bold;
+ 
+}
+
+.btnDetails{
+  /* background-color: #c7ffd8; */
+  background-color: #f2994a;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 100%;
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+  
+  
+}
+.btnDetails:hover{
+  /* background-color:#28df99; */
+  
+  background-color: rgba(242, 153, 74, 0.35);
+}

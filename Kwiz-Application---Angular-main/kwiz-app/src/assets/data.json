@@ -1,0 +1,644 @@
+[
+  {
+    "name": "Quiz 1",
+    "category": "JAVA",
+    "level": 0,
+    "questions": [
+      {
+        "text": "Which of the following option leads to the portability and security of Java?",
+        "options": [
+          "Bytecode is executed by JVM",
+          "The applet makes the Java code secure and portable",
+          "Use of exception handling",
+          "Dynamic binding between objects"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "Which of the following is not a Java features?",
+        "options": [
+          "Dynamic",
+          "Architecture Neutral",
+          "Use of pointers",
+          "Object-oriented"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "Which of the following option leads to the portability and security of Java?",
+        "options": [
+          "Bytecode is executed by JVM",
+          "The applet makes the Java code secure and portable",
+          "Use of exception handling",
+          "Dynamic binding between objects"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "_____ is used to find and fix bugs in the Java programs.",
+        "options": ["JVM", "JDK", "JRE", "JDB"],
+        "answerIndex": 3
+      },
+      {
+        "text": "What is the return type of the hashCode() method in the Object class?",
+        "options": ["Object", "int", "long", "void"],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which of the following tool is used to generate API documentation in HTML format from doc comments in source code?",
+        "options": [
+          "javap tool",
+          "javaw command",
+          "Javadoc tool",
+          "javah command"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "Which of the following creates a List of 3 visible items and multiple selections abled?",
+        "options": [
+          "new List(false, 3)",
+          "new List(3, true)",
+          "new List(true, 3)",
+          "new List(3, false)"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which method of the Class.class is used to determine the name of a class represented by the class object as a String?",
+        "options": ["getClass()", "intern()", "getName()", "toString()"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Which of the following option leads to the portability and security of Java?",
+        "options": [
+          "Bytecode is executed by JVM",
+          "The applet makes the Java code secure and portable",
+          "Use of exception handling",
+          "Dynamic binding between objects"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "In which process, a local variable has the same name as one of the instance variables?",
+        "options": [
+          "Serialization",
+          "Variable Shadowing",
+          "Abstraction",
+          "Multi-threading"
+        ],
+        "answerIndex": 1
+      }
+    ]
+  },
+
+  {
+    "name": "Quiz 2",
+    "category": "JAVA",
+    "level": 0,
+    "questions": [
+      {
+        "text": "Which of the following is false?",
+        "options": [
+          "The rt.jar stands for the runtime jar",
+          "It is an optional jar file",
+          "It contains all the compiled class files",
+          "Dynamic binding between objects"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "What is the use of \\w in regex?",
+        "options": [
+          "Used for a whitespace character",
+          "Used for a non-whitespace character",
+          "Used for a word character"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "Which of the following is a mutable class in java?",
+        "options": [
+          "java.lang.String",
+          "java.lang.Byte",
+          "java.lang.Short",
+          "java.lang.StringBuilder"
+        ],
+        "answerIndex": 3
+      },
+      {
+        "text": "What is meant by the classes and objects that dependents on each other?",
+        "options": [
+          "Tight Coupling",
+          "Cohesion",
+          "Loose Coupling",
+          "None of the above"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "How many threads can be executed at a time?",
+        "options": [
+          "Only one thread",
+          "Multiple threads",
+          "Only main (main() method) thread",
+          "Two threads"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "If a thread goes to sleep",
+        "options": [
+          "It releases all the locks it has",
+          "It does not release any locks",
+          "It releases half of its locks.",
+          "It releases all of its lock except one."
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "What is the default encoding for an OutputStreamWriter?",
+        "options": [
+          "UTF-8",
+          "Default encoding of the host platform",
+          "UTF-12",
+          "None of the above"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which of this keyword must be used to inherit a class?",
+        "options": ["super", "this", "extends", "extent"],
+        "answerIndex": 2
+      },
+      {
+        "text": "Which of these is correct way of inheriting class A by class B?",
+        "options": [
+          "class B + class A {}",
+          "class B inherits class A {}",
+          "class B extends A {}",
+          "class B extends class A {}"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "Which of these is not abstract?",
+        "options": ["Thread", "List", "AbstractList", "None of the above"],
+        "answerIndex": 0
+      }
+    ]
+  },
+
+  {
+    "name": "Quiz 1",
+    "category": "ANGULAR",
+    "level": 0,
+    "questions": [
+      {
+        "text": "How does Angular 4 improved error handling, when an error is caused by something in a template?",
+        "options": [
+          "By enabling TypeScript's StrictNullChecks",
+          "By creating flattened versions of Angular modules",
+          "By generating source maps in terms of original template",
+          "None of the mentioned above"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "Observables help you manage . . . . . . . . data.",
+        "options": [
+          "synchronous",
+          "asynchronous",
+          "Both asynchronous & synchronous",
+          "None of the above"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "ng-bind binds the AngularJS Application data to HTML tags.",
+        "options": ["True", "False"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Templates are the rendered view with information from the controller and model.",
+        "options": ["True", "False"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Which of the followings are validation directives?",
+        "options": [
+          "ng-required",
+          "ng-minlength",
+          "ng-pattern",
+          "All of the above"
+        ],
+        "answerIndex": 3
+      },
+      {
+        "text": "Which components can be injected as a dependency in AngularJS?",
+        "options": ["Application Module", "constant", "value", "factory"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Who is sometimes called as Father of AngularJS?",
+        "options": ["Brad Green", "Igor Minor", "Misko Hevery", "Brian Ford"],
+        "answerIndex": 2
+      },
+      {
+        "text": "AngularJS module can be created using ________",
+        "options": [
+          "angular.module();",
+          "var myModule = new module();",
+          "module.create();",
+          "angular.create();"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "AngularJS expressions are written using.",
+        "options": [
+          "double braces like {{ expression}}",
+          "small bracket like (expression)",
+          "single braces like {expression}",
+          "capital bracket like [expression]"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "What angular function is used to manually start up an angular application?",
+        "options": [
+          "angular.copy",
+          "angular.element",
+          "angular.bootstrap",
+          "None of the above"
+        ],
+        "answerIndex": 2
+      }
+    ]
+  },
+
+  {
+    "name": "Quiz 2",
+    "category": "ANGULAR",
+    "level": 0,
+    "questions": [
+      {
+        "text": "AngularJS directives are used in ________",
+        "options": ["Model", "View", "Controller", "Module"],
+        "answerIndex": 1
+      },
+      {
+        "text": "There is a controller which takes a single parameter. We call it . . . . . parameter.",
+        "options": ["$param", "$scope", "$const", "$control"],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which of the following directive allows us to use form?",
+        "options": ["ng-include", "ng-form", "ng-bind", "ng-attach"],
+        "answerIndex": 1
+      },
+      {
+        "text": "Is AngularJS extensible?",
+        "options": ["True", "False"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Can an HTML page have multiple “ng-app” directive for bootstrapping multiple AngularJS application?",
+        "options": ["Yes", "No"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Angular 2 is entirely component based. Controllers and $scope are no longer used. They have been replaced by . . . . . . . and . . . . . . . .",
+        "options": [
+          "components, controllers",
+          "$scopes, components",
+          "components, directives",
+          "controllers, directives."
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "Angular 2 can detect when component data changes, and then automatically re-render the view to reflect that change.",
+        "options": ["True", "False"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Angular 2 make use of the . . . . . . . module syntax.",
+        "options": ["ES2016a", "ES2017", "ES2016", "ES2015"],
+        "answerIndex": 3
+      },
+      {
+        "text": "Angular 2 uses . . . . . . . . . for fast views on mobile.",
+        "options": ["client side rendering", "server side rendering"],
+        "answerIndex": 1
+      },
+      {
+        "text": "On the opposite side of event bindings (()) lie Angular's square-bracket syntax ([]) which signify a . . . . . .",
+        "options": [
+          "property binding",
+          "class binding",
+          "style binding",
+          "both A and B"
+        ],
+        "answerIndex": 0
+      }
+    ]
+  },
+
+  {
+    "name": "Quiz 1",
+    "category": "JAVASCRIPT",
+    "level": 0,
+    "questions": [
+      {
+        "text": "Which of the following is not JavaScript Data Types?",
+        "options": ["Undefined", "Number", "Boolean", "Float"],
+        "answerIndex": 3
+      },
+      {
+        "text": "Inside which HTML element do we put the JavaScript?",
+        "options": ["<script>", "<head>", "<meta>", "<style>"],
+        "answerIndex": 0
+      },
+      {
+        "text": "What is the correct syntax for referring to an external script called \"LFC.js\"?",
+        "options": [
+          "<script src=\"LFC.js\">",
+          "<script source=\"LFC.js\">",
+          "<script ref=\"LFC.js\">",
+          "<script type=\"LFC.js\">"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "Which of them is not the looping structures in JavaScript?",
+        "options": ["for", "while", "forwhich", "dowhile"],
+        "answerIndex": 1
+      },
+      {
+        "text": "What are the types of Pop up boxes available in JavaScript",
+        "options": ["Alert", "Prompt", "Confirm", "All of the above"],
+        "answerIndex": 3
+      },
+      {
+        "text": "What is the default value of the asyc attribute?",
+        "options": ["0", "1", "False", "True"],
+        "answerIndex": 3
+      },
+      {
+        "text": "Which of the following method checks if its argument is not a number?",
+        "options": ["isNan()", "nonNaN()", "NaN()", "None of the above"],
+        "answerIndex": 2
+      },
+      {
+        "text": "What is the output of below Javascript code?",
+        "options": [
+          "Throws Error",
+          "Object",
+          "Displays nothing",
+          "Current date"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "The syntax of Eval is ________________",
+        "options": [
+          "[objectName.]eval(numeric)",
+          "[objectName.]eval(string)",
+          "[EvalName.]eval(string)",
+          "None of the above"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which tag(s) can handle mouse events in Netscape?",
+        "options": ["<IMG>", "<A>", "<br>", "<br>"],
+        "answerIndex": 0
+      }
+    ]
+  },
+
+  {
+    "name": "Quiz 2",
+    "category": "JAVASCRIPT",
+    "level": 0,
+    "questions": [
+      {
+        "text": "Javascript is _________ language.?",
+        "options": ["Application", "Scripting", "Programming", "None of These"],
+        "answerIndex": 1
+      },
+      {
+        "text": "JavaScript is designed for following purpose",
+        "options": [
+          "To Perform Server Side Scripting Opertion",
+          "To Execute Query Related to DB on Server",
+          "To add interactivity to HTML Pages",
+          "To Style HTML Pages"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "JavaScript is can be written",
+        "options": [
+          "directly into JS file and included into HTML",
+          "None of these",
+          "directly on the Server Script",
+          "All of these"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "The service(s) that enables networking through scripted HTTP requests is",
+        "options": [
+          "XMLHttpResponse",
+          "XMLRequest",
+          "XMLHttpRequest",
+          "All of the mentioned"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "JavaScript code between a pair of “script” tags are called",
+        "options": ["Non-inline", "External", "Referenced", "Inline"],
+        "answerIndex": 3
+      },
+      {
+        "text": "Client-side JavaScript code is embedded within HTML documents in",
+        "options": [
+          "A URL that uses the special javascript:encoding",
+          "A URL that uses the special javascript:stack",
+          "A URL that uses the special javascript:protocol",
+          "A URL that uses the special javascript:code"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "How does JavaScript store dates in a date object?",
+        "options": [
+          "The number of milliseconds since January 1st, 1970",
+          "The number of days since January 1st, 1900",
+          "The number of seconds since Netscape's public stock offering.",
+          "None of the above"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "text": "Which of the following attribute can hold the JavaScript version?",
+        "options": ["LANGUAGE", "SCRIPT", "VERSION", "None of the above"],
+        "answerIndex": 0
+      },
+      {
+        "text": "What is the correct JavaScript syntax to write \"Hello World\"?",
+        "options": [
+          "System.out.println(\"Hello World\")",
+          "println (\"Hello World\")",
+          "document.write(\"Hello World\")",
+          "response.write(\"Hello World\")"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "text": "Inside which HTML element do we put the JavaScript?",
+        "options": ["<js>", "<scripting>", "<script>", "<javascript>"],
+        "answerIndex": 2
+      }
+    ]
+  },
+
+  {
+    "name": "Quiz 1",
+    "category": "PYTHON",
+    "level": 0,
+    "questions": [
+      {
+        "text": "Which module is used in python to create Graphics?",
+        "options": ["Turtle", "Canvas", "Tkinter", "Graphics"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Who developed the Python language?",
+        "options": [
+          "Zim Den",
+          "Guido van Rossum",
+          "64",
+          "Dynamic binding between objects"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which one of the following is the correct extension of the Python file?",
+        "options": [".py", ".python", ".p", "None of these"],
+        "answerIndex": 0
+      },
+      {
+        "text": "What do we use to define a block of code in Python language?",
+        "options": ["Key", "Brackets", "Indentation", "None of these"],
+        "answerIndex": 2
+      },
+      {
+        "text": "Which character is used in Python to make a single line comment?",
+        "options": ["/", "//", "#", "!"],
+        "answerIndex": 2
+      },
+      {
+        "text": "What is the method inside the class in python language?",
+        "options": ["Object", "Function", "Attribute", "Argument"],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which of the following is not a keyword in Python language?",
+        "options": ["val", "raise", "try", "with"],
+        "answerIndex": 0
+      },
+      {
+        "text": "Which one of the following has the same precedence level?",
+        "options": [
+          "Division, Power, Multiplication, Addition and Subtraction",
+          "Division and Multiplication",
+          "Subtraction and Division",
+          "Power and Division"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which one of the following has the highest precedence in the expression?",
+        "options": ["Division", "Subtraction", "Power", "Parentheses"],
+        "answerIndex": 3
+      },
+      {
+        "text": "Which of the following functions is a built-in function in python language?",
+        "options": ["val()", "document.write()", "print()", "None of these"],
+        "answerIndex": 2
+      }
+    ]
+  },
+
+  {
+    "name": "Quiz 2",
+    "category": "PYTHON",
+    "level": 0,
+    "questions": [
+      {
+        "text": "What is the value of this expression?",
+        "options": ["12", "64", "128", "256"],
+        "answerIndex": 3
+      },
+      {
+        "text": "How many CPUs will the threading library use?",
+        "options": [
+          "Zero. threading does not make use of CPUs.",
+          "One",
+          "Two",
+          "All available CPUs"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "Which of the following codes raises an exception?",
+        "options": [
+          "#test",
+          "a={1, 2, \\ #comment 3, 4}",
+          "a={1, 2, #comment 3, 4}",
+          "None of these"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "text": "What is the maximum value for an integer in Python 3?",
+        "options": ["2^63-1", "32767", "65536", "No limit"],
+        "answerIndex": 3
+      },
+      {
+        "text": "Which character is used in Python to make a single line comment?",
+        "options": ["/", "//", "#", "!"],
+        "answerIndex": 2
+      },
+      {
+        "text": "What is the output of print 0.1 + 0.2 == 0.3?",
+        "options": ["True", "False", "Machine dependent", "Error"],
+        "answerIndex": 1
+      },
+      {
+        "text": "What does ~4 evaluate to?",
+        "options": ["-5", "-4", "-3", "+3"],
+        "answerIndex": 0
+      },
+      {
+        "text": "What is the type of inf?",
+        "options": ["Boolean", "Integer", "Float", "Complex"],
+        "answerIndex": 2
+      },
+      {
+        "text": "Which of the following is incorrect?",
+        "options": ["x = 0b101", "x = 0x4f5", "x = 19023", "x = 03964"],
+        "answerIndex": 3
+      },
+      {
+        "text": "What is the result of cmp(3, 1)?",
+        "options": ["1", "0", "True", "False"],
+        "answerIndex": 0
+      }
+    ]
+  }
+]

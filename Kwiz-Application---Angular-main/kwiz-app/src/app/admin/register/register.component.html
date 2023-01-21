@@ -1,0 +1,140 @@
+<div class="row">
+  <div class="column">
+    <div id="welcometxt">
+      <h2>Welcome to kWiz!</h2>
+      <p style="color:rgb(126, 121, 121);"> 
+        A platform where you can attempt
+        quizzes according to your favorite category.
+        </p>
+    </div>
+    <img id="welcome_img" src="../../../assets/login_img.svg" />
+  </div>
+
+    <div class="column">
+      <div id="formbox">
+        <p class="center_para">Create your Account!<br /><br /><br /></p>
+        <form #registerForm="ngForm">
+          <label for="name">Name*</label><br />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your Name"
+            [(ngModel)]="name"
+            required
+            minlength="4"
+            #u_name="ngModel"
+          />
+          <br />
+          <br />
+
+          <!--Error Handling-->
+          <div
+            *ngIf="u_name.invalid && (u_name.dirty || u_name.touched)"
+            class="alert alert-danger"
+          >
+            <div *ngIf="u_name.errors?.required">First name is required.</div>
+            <div *ngIf="u_name.errors?.minlength">
+              First Name must be at least 4 characters long.
+            </div>
+          </div>
+
+          <label for="email">Email ID*</label><br />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email id"
+            [(ngModel)]="email"
+            #email_id="ngModel"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+          <br /><br />
+
+          <!-- Error Handling-->
+          <div
+            *ngIf="email_id.invalid && (email_id.dirty || email_id.touched)"
+            class="alert alert-danger"
+          >
+            <div *ngIf="email_id.errors?.required">Email Id is required.</div>
+            <div *ngIf="email_id.errors?.pattern">
+              Please provide a valid email id.
+            </div>
+          </div>
+
+          <label for="password">Password*</label><br />
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            [(ngModel)]="password"
+            ngModel
+            #f_password="ngModel"
+            minlength="6"
+            required
+          />
+          <br /><br />
+
+          <div
+            *ngIf="f_password.invalid && (f_password.dirty || f_password.touched)"
+            class="alert alert-danger"
+          >
+            <div *ngIf="f_password.errors?.required">Password required.</div>
+            <div *ngIf="f_password.errors?.minlength">
+              Password should be at least 6 characters
+            </div>
+          </div>
+
+          <label for="password">Confirm Password*</label><br />
+          <input
+            id="cnf_password"
+            type="password"
+            name="cnf_password"
+            placeholder="Enter your password"
+            ngModel
+            #c_password="ngModel"
+            minlength="6"
+            required
+          />
+          <br /><br />
+
+          <!-- Error Handling-->
+          <div
+            *ngIf="c_password.invalid && (c_password.dirty || c_password.touched)"
+            class="alert alert-danger"
+          >
+            <div *ngIf="c_password.errors?.required">Password required.</div>
+            <div *ngIf="c_password.errors?.minlength">
+              Password should be at least 6 characters
+            </div>
+          </div>
+
+          <!-- check for same password -->
+          <div
+            *ngIf="(c_password.value != f_password.value) && c_password.dirty && f_password.dirty"
+            class="alert alert-danger"
+          >
+            Password do not match
+          </div>
+
+          <button
+            id="register_button"
+            [disabled]="!registerForm.valid"
+            (click)="register()"
+          >
+            register
+          </button>
+          <br />
+        </form>
+        <br /><br />
+        <p class="end_para">
+          Already an Existing User?<br />
+          <a routerLink="/login" style="font-weight: lighter;">LOGIN here</a>
+        </p>
+      </div>
+      <br />
+      <br />
+    </div>
+</div>

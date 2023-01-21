@@ -1,0 +1,61 @@
+.card{
+    box-shadow:8px 8px 20px #db985e;
+    margin-left: 100px;
+    margin: 15px;
+    animation-name: example;
+    animation-duration: 4s;
+    width: 350px;
+    height: auto;
+    animation-iteration-count: infinite;
+    background: #f2984a;
+    border-radius: 20px;
+
+}
+
+.card-body{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+.card-title{
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+}
+.card-title2{
+    font-size: x-large;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+}
+.card-text{
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn{
+    background-color: white;
+    font-family: Montserrat;
+    color: black;
+    font-size: 20px;
+    font-weight: 1000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(116, 111, 111, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0px white;
+    
+    }
+
+  @keyframes example {
+  
+  0%  { left:0px; top:15px;}
+  50% { left:0px; top:0px;}
+  100% { left:0px; top:15px;}
+}

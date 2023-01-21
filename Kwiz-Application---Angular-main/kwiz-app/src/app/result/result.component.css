@@ -1,0 +1,15 @@
+#resultdiv {
+    font-size: 30px;
+    text-align: center;
+}
+#resimg{
+    height: 30%;
+    width: 30%;
+}
+#score{
+    font-size: 50px;
+    font-weight: 600;
+}
+#dashboardlink{
+    font-size: 30px;
+} 

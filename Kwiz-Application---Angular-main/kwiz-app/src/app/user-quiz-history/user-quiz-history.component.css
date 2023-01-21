@@ -1,0 +1,17 @@
+.containerShadow{
+    font-weight: 600; 
+    background-color: #ffe5b9a2;
+    /* background-color: rgba(242, 153, 74, 0.35); */
+    margin-top: 25px; border-radius: 20px; padding: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Qno{
+    font-weight: 600; font-size: 20px; padding-top: 10px;
+}
+.Qtext{
+    font-size: 25px; font-weight:700; padding-bottom: 10px;
+}
+.jumbo{
+    background-color: #ff973b9d;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+}

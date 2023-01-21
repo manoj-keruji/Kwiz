@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 30px;
+    height: fit-content;
+}
+
+#welcometxt{
+    margin-left: 2%;
+    font-size: 20px;
+}
+#welcome_img {
+    height: 80%;
+    width: 80%;
+    margin-left: 2%;
+}
+.center_para{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+.end_para{
+    margin-left: 5%;
+    font-weight: bold;
+}
+#formbox{
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 2%;
+    line-height: 150%;
+    width: 80%;
+    float: right;
+}
+form{
+    padding-left: 5%;
+}
+label{
+    padding-left: 1%;
+}
+input{
+    background: #FFFFFF;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    padding: 3%;
+}
+#login_button{
+    background: #F2994A;
+    border: 1px solid #FFCE31;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100px;
+    height: 37px;
+    text-transform: uppercase;
+    font-size: medium;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 80%;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

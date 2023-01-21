@@ -1,0 +1,156 @@
+<div class="row py-5 px-4">
+  <div class="col-md-10 mx-auto">
+    <!-- Profile widget -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <div class="mb-4 px-4 pt-0 pb-4 cover min-vh-75">
+        <div class="media align-items-center profile-head .mx-auto">
+          <div class="profile mr-3 .mx-auto">
+            <img
+              [src]="( photoUrl != '' ? photoUrl : './assets/profile.png' )"
+              alt="..."
+              width="130"
+              class="rounded mb-2 img-thumbnail .my-auto"
+            /><button
+              id="b1"
+              class="btn btn-outline-dark btn-sm btn-block"
+              (click)="toggleVisibility()"
+            >
+              Edit profile
+            </button>
+          </div>
+
+          <div class="media-body mb-5 text-white">
+            <h4 class="mt-0 mb-4">{{displayName}}</h4>
+          </div>
+
+          <div
+            class="bg-transparent p-4 d-flex justify-content-end text-center"
+          >
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <h5 class="text-white font-weight-bold mb-0 d-block">
+                  {{entries.length}}
+                </h5>
+                <small class="text-white font-weight-bold">
+                  <i class="fas fa-image mr-1"></i>ATTEMPTED QUIZZES</small
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="m-4 pl-4 border p-4" *ngIf="visible">
+        Photo Url:
+        <input class="w-50" type="text" [(ngModel)]="photoUrl" />
+        <button
+          class="btn btn-outline-dark btn-sm ml-4 "
+          (click)="updatePhotoUrl()"
+        >
+          Update
+        </button>
+      </div>
+
+      <div class="px-4 py-4">
+        <h5 class="mx-auto py-4">About</h5>
+        <div class="card rounded bg-transparent border-transparent mb-3 p-2">
+          <div class="">
+            Name: <input class="mx-4" type="text" [(ngModel)]="displayName" />
+            <button
+              (click)="updateDisplayName()"
+              id="b1"
+              class="btn btn-outline-dark btn-sm px-4"
+            >
+              Update
+            </button>
+          </div>
+          <br />
+          <div>
+            Email:
+            <p class="mx-4" style="display: inline">
+              {{authService.getEmail()}}
+            </p>
+          </div>
+        </div>
+
+        <div class="py-4 px-4">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="ml-2" style="font-weight: bold; font-size: xx-large">
+              Recent Quizes Attempts
+            </h5>
+            <button class="btn btn-outline-dark btn-sm ml-4 " id="b1" (click)="setcharts()">Charts</button>
+          
+            <select
+              class="form-select form-select-lg mb-3 p-2"
+              aria-label=".form-select-lg example"
+              name="my-select"
+              [(ngModel)]="mySelect"
+              (change)="sort()"
+            >
+            
+              <option value="0">Please Select Sorting Parameter</option>
+              <option value="1">Category</option>
+              <option value="2">Most Recent</option>
+              <option value="3">Least Recent</option>
+              <option value="4">Highest Score</option>
+              <option value="5">Difficulty Level</option>
+              <option value="6">Quiz Name</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- If Quiz List is empty -->
+        <div class="text-center" *ngIf="!entries?.length">
+          <p class="text-danger">No Quiz Attempted</p>
+        </div>
+        <div class="container">
+          <div class="row" *ngIf="entries?.length">
+            <div
+              id="cards"
+              *ngFor="let entry of entries.slice().reverse(); let i = index"
+            >
+              <div
+                [ngClass]="entry.user.score > 6 ? 'border-success text-success': 'border-danger text-danger'"
+              >
+                <div class="cardheader">{{entry.quiz.category}}</div>
+
+                <div class="card-body">
+                  <h5 class="card-title">{{entry.quiz.name}}</h5>
+
+                  <p class="level">Level : {{level[entry.quiz.level]}}</p>
+                  <span class="card-text">
+                    Score : {{entry.user.score}} / {{entry.user.answers.length}}
+                  </span>
+
+                  <p>
+                    <span class="status" style="color: black">Result: </span>
+                    <span
+                      class="status"
+                      [ngStyle]="{'color':entry.user.score <= 6  ? 'red' : 'green' }"
+                    >
+                      {{entry.user.score <= 6 ? "Failed" : "Passed"}}</span
+                    >
+                  </p>
+
+                  <p class="attempted">
+                    Attempted on : {{entry.user.date?.toMillis() |
+                    date:'dd/MM/yyyy'}}
+                  </p>
+
+                  <a
+                    href="#"
+                    class="btn btnDetails"
+                    [routerLink]="['/history', entry.user.category, entry.user.quizId, entry.user.date.toMillis()]"
+                    (click)="setEntryToService(entry)"
+                    >Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

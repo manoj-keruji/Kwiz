@@ -1,0 +1,44 @@
+<p><cd-timer class="bootstrap-timer" format="intelli" [startTime]="900" [endTime]="00" (onComplete)="submitTest()" [countdown]="true"></cd-timer></p>
+
+<div id="container">
+    <div id="quiz-info" style="font-weight: bold;">
+        Quiz Category: <b style="font-weight: lighter;"> {{quiz?.category}} </b>
+        &nbsp;&nbsp;&nbsp;
+        Difficulty Level: <b style="font-weight: lighter;">{{quiz_level[quiz ? quiz.level : 0]}}</b>
+        &nbsp;&nbsp;&nbsp;
+        Quiz name: <b style="font-weight: lighter;" >{{quiz?.name}} </b>
+    </div>
+    <div id="question" *ngIf="quiz?.questions?.length">
+        <div id="question-info">
+            Question {{currentIndex+1}} Out of 10
+        </div>
+        <div id="question-name">
+          {{quiz!.questions[currentIndex]!.text}}
+        </div>
+        <div class="text" style="font-size:x-large; text-align: left;">
+            <div>
+                <ul>
+                    <li *ngFor = "let option of quiz!.questions[currentIndex].options; index as i">
+                        <label class="container" for="test{{i}}">{{option}}
+                            <input type="radio" value={{option}} id="test{{i}}" name="radio" (click)="markAnswer(i)"
+                            [checked]="wasSelected(i)">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+                <div>
+                    <button id="prev_question" [disabled]="!isStart()" (click)=previousQuestion() ><mat-icon style="color: sandybrown; font-size: xxx-large; font-weight: bolder;margin-right: 15px;">keyboard_arrow_left</mat-icon></button>
+                </div>
+                <div  #endTest>
+                    <button id="submit_quiz" (click)=submitTest()>Submit Quiz</button>
+                </div>
+                <div>
+                    <button id="next_question" [disabled]="!isEnd()" (click)=nextQuestion() ><mat-icon style="color: sandybrown; font-size: xxx-large; font-weight: bolder;margin-right: 15px;">keyboard_arrow_right</mat-icon></button>
+                </div>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>

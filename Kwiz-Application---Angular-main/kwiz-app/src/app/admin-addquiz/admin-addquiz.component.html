@@ -1,0 +1,115 @@
+<div id="container">
+    <div id="quiz-info">
+        Quiz Category: <b>{{this.params?.category}}</b>
+        &nbsp;&nbsp;&nbsp;
+        Difficulty Level:<select  [(ngModel)]="level" class="form-select form-select-lg ml-2 rounded"
+        aria-label=".form-select-lg example" >
+          <option [value]="undefined" [disabled]="true" >Difficulty Level</option>
+          <option *ngFor = "let lev of levels; index as i" [value]="i">{{lev}}</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;
+        Quiz Name: <b>{{this.params?.name}}</b>
+    </div>
+    <div id="question" >
+        <div id="question-info">
+            Question {{currentIndex+1}} Out of 10
+        </div>
+        <div id="question-name">
+
+         <p class="pr-2 pl-4 mt-3 " for="quest" style="text-align: left;">Add Question: </p>
+         <textarea required placeholder="Please enter the question"
+          class="ml-2 w-75 rounded" type="text" id="quest" name="quest"
+          [(ngModel)]= "currentQuestion.text"
+          ></textarea>
+        </div>
+        <div class="text" style="font-size:20px; text-align: left; margin-top: 0%; ">
+            <table class="table ml-4 table-borderless">
+                <tbody>
+                    <tr>
+                        <td style="padding-left: 5%; padding-top: 2%;">
+                            <tr>
+                                <label class="container ml-4">
+                                    <input [(ngModel)]="currentQuestion.answerIndex" type="radio" value=0 name="radio" >
+                                    <span class="checkmark"></span>
+                                </label>
+                            </tr>
+                            <tr><br/>
+                                Option 1:
+                            </tr>
+                        </td>
+                        <td>
+                            <textarea rows="3" placeholder="Enter Option"
+                            [(ngModel)]= "currentQuestion.options[0]" class="ml-2 w-75"
+                            type="text"></textarea>
+                        </td>
+                        <td style="padding-top: 2%;">
+                            <tr>
+                                <label class="container ml-4">
+                                    <input [(ngModel)]="currentQuestion.answerIndex" type="radio" value=2 name="radio" >
+                                    <span class="checkmark"></span>
+                                </label>
+                            </tr>
+                            <tr><br/>
+                                Option 3:
+                            </tr>
+                        </td>
+                        <td>
+                            <textarea rows="3" placeholder="Enter Option"
+                            [(ngModel)]= "currentQuestion.options[2]" class="ml-2 w-75"
+                            type="text"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 5%; padding-top: 2%;">
+                            <tr>
+                                <label class="container ml-4">
+                                    <input [(ngModel)]="currentQuestion.answerIndex" type="radio" value=1 name="radio" >
+                                    <span class="checkmark"></span>
+                                </label>
+                            </tr>
+                            <tr><br/>
+                                Option 2:
+                            </tr>
+                        </td>
+                        <td>
+                            <textarea rows="3" placeholder="Enter Option"
+                            [(ngModel)]= "currentQuestion.options[1]" class="ml-2 w-75"
+                            type="text"></textarea>
+                        </td>
+                        <td style="padding-top: 2%;">
+                            <tr>
+                                <label class="container ml-4">
+                                    <input [(ngModel)]="currentQuestion.answerIndex" type="radio" value=3 name="radio" >
+                                    <span class="checkmark"></span>
+                                </label>
+                            </tr>
+                            <tr><br/>
+                                Option 4:
+                            </tr>
+                        </td>
+                        <td>
+                            <textarea rows="3" placeholder="Enter Option"
+                            [(ngModel)]= "currentQuestion.options[3]" class="ml-2 w-75"
+                            type="text"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="isStart()">
+            <button id="prev_question" (click)=previousQuestion() >Previous</button>
+        </div>
+        <div *ngIf="isEnd(); else endTest">
+            <button id="next_question" [disabled] = "(!currentQuestion.text)||(currentQuestion.answerIndex === -1)
+            ||(currentQuestion.options.length != 4)||(level == undefined)" (click)=nextQuestion() >Next</button>
+        </div>
+        <ng-template #endTest>
+            <button id="next_question1" [disabled] = "(!currentQuestion.text)||(currentQuestion.answerIndex === -1)
+            ||(currentQuestion.options.length != 4)||(level == undefined)" (click)=addQuiz() >Submit Quiz</button>
+        </ng-template>
+        <br/>
+        <p> </p>
+     </div>
+    <br />
+    <p></p>
+  </div>

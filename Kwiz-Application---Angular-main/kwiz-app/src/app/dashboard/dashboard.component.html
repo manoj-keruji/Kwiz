@@ -1,0 +1,12 @@
+
+<!-- subject list menu for selecting subjects -->
+<div class="navdiv" style="padding-top: 1%;">
+    <ul class="navbar-nav" >
+        <span  *ngFor="let string of navList">
+            <a [routerLink]="['subject/',string] " [style.width.%]="[widthVal]" routerLinkActive="myactive"> {{string}} </a>
+        </span>
+    </ul>
+</div>
+
+<!-- this outlet will print all quizes which user can take -->
+<router-outlet></router-outlet>
