@@ -6,15 +6,12 @@ Kwiz is a web portal that will allow users to take various quizzes of different 
 
 # Table Of Contents
 * [App Screenshot and Doc](#app-ss)
-* [Images](#images)
 * [Installation](#installation)
 * [Running the website locally](#running)
 
 # <a name="app-ss"></a>Application Screenshot and Doc
-https://docs.google.com/document/d/1mK1VBN698oeO8pkD_XhPmfbwiieWD10T0LKpinSGioY/edit?usp=sharing
-
-# <a name="images"></a>Images
 https://drive.google.com/drive/folders/1vsKmSuE9QpIO68pdjXMJuB_dg1N0TPWF?usp=sharing
+
 
 # <a name="installation"></a>Installation
 A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this: 
