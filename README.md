@@ -5,25 +5,21 @@ Kwiz-app Ultimate quiz platform
 Kwiz is a web portal that will allow users to take various quizzes of different domains according to level of difficulty. This kWiz platform allows multiple users to attempt a same quiz at the same time. Kwiz portal aims at helping learners to improve their knowledge in various domains by giving on-the-go quizzes. The admin has the privileges to add, delete, and modify the quiz questions. The user can either login or simply give a test and see the scores of a particular test. 
 
 # Table Of Contents
-* [Team Members](#team-members)
+* [App Screenshot and Doc](#app-ss)
+* [Images](#images)
 * [Installation](#installation)
 * [Running the website locally](#running)
 
-# <a name="team-members"></a>Team Members
-* Aashlesh Dhumane
-* Amisha Shandilya
-* Laxmi Mali
-* Jhanvi Bhatia
-* Keerthi Nambiar
-* Shreyas Dhorkule
-* Manoj Keruji
-* Saurabh Kushwah
-* Shushant Sabnis
+# <a name="app-ss"></a>Application Screenshot and Doc
+https://docs.google.com/document/d/1mK1VBN698oeO8pkD_XhPmfbwiieWD10T0LKpinSGioY/edit?usp=sharing
+
+# <a name="images"></a>Images
+https://drive.google.com/drive/folders/1vsKmSuE9QpIO68pdjXMJuB_dg1N0TPWF?usp=sharing
 
 # <a name="installation"></a>Installation
 A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this: 
 
-1. Make your own local working copy of your new repo using git clone, using the url : https://github.com/aashleshdhumane/Kwiz-Application---Angular.git
+1. Make your own local working copy of your new repo using git clone, using the url : https://github.com/manoj-keruji/Kwiz.git
 
 2. Use these installation commands to install the dependencies required for this project:
 ```bash
